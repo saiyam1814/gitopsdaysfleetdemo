@@ -1,0 +1,9 @@
+kind: ClusterGroup
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: production-group
+  namespace: clusters
+spec:
+  selector:
+    matchLabels:
+      env: prod

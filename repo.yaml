@@ -3,9 +3,12 @@ kind: GitRepo
 metadata:
   name: demo
   # This namespace is special and auto-wired to deploy to the local cluster
-  namespace: fleet-local
+  namespace: clusters
 spec:
   # Everything from this repo will be ran in this cluster. You trust me right?
-  repo: "https://github.com/gitopsdaysfleetdemo/demo"
+  repo: "https://github.com/saiyam1814/gitopsdaysfleetdemo"
+  branch: main
+  targets:
+  - clusterGroup: production-group
   paths:
   - demo
